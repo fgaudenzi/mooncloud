@@ -35,7 +35,7 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
+hr.star-yellow,
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -45,7 +45,7 @@ hr.star-primary {
     border-top: solid 5px;
     text-align: center;
 }
-
+hr.star-yellow:after,
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
@@ -64,6 +64,10 @@ hr.star-light {
 hr.star-light:after {
     color: #fff;
     background-color: #18bc9c;
+}
+hr.star-yellow:after {
+    color:  #2c3e50;
+    background-color:  #EDC92C;
 }
 
 hr.star-primary {
@@ -456,4 +460,9 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
