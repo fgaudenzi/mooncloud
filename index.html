@@ -189,8 +189,21 @@ python probe.py test.xml</pre></li>
                     <ul>
                     <li>Copy the sample from sample/encchannel.xml in ta home folder
                     <pre>
-cp sample/encchannel.xml ~/</pre></li>
-                    <li>Open encchannel.xml with a texteditor and replace the fields with your configuration as follow:(to finish)<pre>to be added
+cp mooncloud_probe_ec/testec.xml ~/</pre></li>
+                    <li>Open encchannel.xml with a texteditor and replace the fields with your configuration as follow:(to finish)<pre>
+                    <collector probe_driver="EncryptedChannelProbe" id="0001" cmid="0001">
+   <TestCases>
+      <TestCase>
+         <ID>1</ID>
+         <TestInstance Operation="config">
+            <Input>
+        <Item key="port" value="1443"/>
+                <Item key="host" value="tufarolo.eu"/>
+            </Input>
+         </TestInstance>
+      </TestCase>
+   </TestCases>
+</collector>
                     </pre></li>
                     </ul>
 
