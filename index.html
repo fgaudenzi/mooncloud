@@ -187,13 +187,11 @@ python probe.py test.xml</pre></li>
 
                     <p style="margin-top:20px;">There are already available  <a href="https://github.com/SESARLab/mooncloud_probe_ec"> Channel Encryption</a> probe and <a href="https://github.com/SESARLab/mooncloud_probe_vuln">Nessus Vulnerability Scanner</a> probe. To install them clone the repository and run installer.sh.</p><p><br><br>Run Channel Encryption probe:</p>
                     <ul>
-                    <li>Copy the sample from sample/encchannel.xml in ta home folder
+                    <li>Copy the testec.xml from mooncloud_probe_ec/testec.xml in ta home folder
                     <pre>
-cp mooncloud_probe_ec/testec.xml ~/</pre></li>
+cp mooncloud_probe_ec/testec.xml ~/testcase-1.xml</pre></li>
                     <li>Open encchannel.xml with a texteditor and replace the fields with your configuration as follow:(to finish)
                    <xmp style="background-color: #ECF0F1">
-
-
 <collector probe_driver="EncryptedChannelProbe" id="0001" cmid="0001">
    <TestCases>
       <TestCase>
@@ -209,6 +207,7 @@ cp mooncloud_probe_ec/testec.xml ~/</pre></li>
 </collector>
 </xmp>
 </li>
+<li>You can run the probe by the command:<pre>$ python probe.py testcase-1.xml</pre></li>
                     </ul>
 
                 </div>
